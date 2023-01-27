@@ -4,6 +4,11 @@ services:
     container_name: my_ubuntu_focal
     image: ubuntu:focal
     restart: on-failure
+    command: "/bin/bash"
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/root
     networks:
       - public
 networks:
