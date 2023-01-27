@@ -7,5 +7,7 @@ services:
       - 8000:80
     networks:
       - public
+    command: bin/bash
+
 networks:
   public:
