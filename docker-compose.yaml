@@ -4,6 +4,8 @@ services:
     container_name: my_ubuntu_focal
     image: ubuntu:focal
     restart: on-failure
+    stdin_open: true # docker run -i
+    tty: true # docker run -t
     command: bin/bash
     ports:
       - 8000:80
