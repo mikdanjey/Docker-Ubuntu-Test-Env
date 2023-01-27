@@ -8,6 +8,6 @@
 
 `docker-compose down`
 
-`docker container prune --filter "until=24h"`
+`docker container prune --filter "until=0m"`
 
 `docker volume prune --filter "label!=keep"`
