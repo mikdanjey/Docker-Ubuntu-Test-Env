@@ -1,4 +1,7 @@
 version: "3.7"
 services:
   ubuntu:
+    container_name: my_ubuntu_focal
     image: ubuntu:focal
+    restart: on-failure
+    command: ["sleep","infinity"]
